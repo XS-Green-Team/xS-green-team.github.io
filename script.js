@@ -59,7 +59,7 @@ async function runModel(file) {
 
      document.getElementById('loader').style.display = 'none'; 
 
-     document.getElementById("prediction-text").innerHTML = predictions;
+     document.getElementById("prediction-text").innerHTML = largest_class;
 
 
     // if (percent > 50) {
