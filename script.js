@@ -1,7 +1,7 @@
 var model; 
 
 (async function() {
-    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json', false);
+    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json');
     alert("Model has loaded!");
   
     document.getElementById('loader').style.display = 'none'; 
