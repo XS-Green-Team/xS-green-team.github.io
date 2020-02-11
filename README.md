@@ -1,5 +1,5 @@
-# Cloudiopsy
+# XS Green Team
 
-A colorectal tissue classifier neural network trained on Google Cloud Platform and served through Tensorflow.js
+A trash classifier featuring a neural network trained on Google Colab and served through Tensorflow.js
 ---
-Created by Adrian Serapio
+Created by the Green Team Innovation Subcommittee
