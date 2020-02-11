@@ -1,7 +1,7 @@
 var model; 
 
 (async function() {
-    model = await tf.loadModel('https://pilipino.github.io/model/model.json');
+    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json');
     alert("Model has loaded!");
     document.getElementById('loader').style.display = 'none'; 
 
@@ -56,7 +56,6 @@ async function runModel(file) {
     //     largest_class = i;
     //     }
     // }
-
 
      document.getElementById('loader').style.display = 'none'; 
 
