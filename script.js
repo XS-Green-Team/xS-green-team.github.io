@@ -47,20 +47,20 @@ async function runModel(file) {
     img_tensor = tf.div(img_tensor, 255);
     let predictions = await model.predict(img_tensor).dataSync();
 
-    var largest = predictions[0];
-    var largest_class = 0;
+    // var largest = predictions[0];
+    // var largest_class = 0;
 
-    for (var i = 0; i < predictions.length; i++) {
-        if (largest < predictions[i] ) {
-        largest = predictions[i];
-        largest_class = i;
-        }
-    }
+    // for (var i = 0; i < predictions.length; i++) {
+    //     if (largest < predictions[i] ) {
+    //     largest = predictions[i];
+    //     largest_class = i;
+    //     }
+    // }
 
 
      document.getElementById('loader').style.display = 'none'; 
 
-     document.getElementById("prediction-text").innerHTML = largest_class;
+     document.getElementById("prediction-text").innerHTML = predictions;
 
 
     // if (percent > 50) {
