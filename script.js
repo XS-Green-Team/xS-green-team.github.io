@@ -1,9 +1,8 @@
 var model; 
 
 (async function() {
-    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json');
+    model = await tf.loadModel('https://pilipino.github.io/model/model.json', false);
     alert("Model has loaded!");
-  
     document.getElementById('loader').style.display = 'none'; 
 
 })();
@@ -48,17 +47,20 @@ async function runModel(file) {
     img_tensor = tf.div(img_tensor, 255);
     let predictions = await model.predict(img_tensor).dataSync();
 
-    let percent;
+    var largest = predictions[0];
+    var largest_class = 0;
 
-    if (predictions < 0.5) {
-        percent = ((1 - predictions) * 100).toFixed(2);
-    } else {
-        percent = ((predictions) * 100).toFixed(2);
+    for (var i = 0; i < predictions.length; i++) {
+        if (largest < predictions[i] ) {
+        largest = predictions[i];
+        largest_class = i;
+        }
     }
+
 
      document.getElementById('loader').style.display = 'none'; 
 
-     document.getElementById("prediction-text").innerHTML = predictions;
+     document.getElementById("prediction-text").innerHTML = largest_class;
 
 
     // if (percent > 50) {
