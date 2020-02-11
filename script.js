@@ -59,6 +59,17 @@ async function runModel(file) {
 
      document.getElementById('loader').style.display = 'none'; 
 
+     if (largest_class == 0) {
+        document.getElementById("prediction-text").innerHTML = "That's a food container! (YELLOW BIN)";
+     } else if (largest_class == 1) {
+        document.getElementById("prediction-text").innerHTML = "That's a plastic wrapper! (ORANGE BIN)";
+     } else if (largest_class == 2) {
+        document.getElementById("prediction-text").innerHTML = "That's paper! (GREEN BIN)";
+     } else if (largest_class == 3) {
+        document.getElementById("prediction-text").innerHTML = "That's a plastic utensil! (ORANGE BIN)";
+     }
+
+
      document.getElementById("prediction-text").innerHTML = largest_class;
 
 
