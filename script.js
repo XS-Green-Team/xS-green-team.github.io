@@ -1,8 +1,9 @@
 var model; 
 
 (async function() {
-    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json');
+    model = await tf.loadModel('https://xs-green-team.github.io/model/model.json', false);
     alert("Model has loaded!");
+  
     document.getElementById('loader').style.display = 'none'; 
 
 })();
@@ -19,7 +20,7 @@ function previewFile() {
     if (file) {
         reader.readAsDataURL(file);
     } else {
-        preview.src = "NORM-FPDCNHFY.jpg";
+        preview.src = "food-wrapper.jpg";
     }
 }
 
