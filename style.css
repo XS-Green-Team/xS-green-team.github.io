@@ -1,0 +1,348 @@
+* {
+	font-family: 'Lato';
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.side-image {
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translateY(-50%);
+
+}
+
+.info {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 58%;
+	left: 0%;
+	margin: 0 4em;
+	transform: translateY(-50%);
+	overflow-x: hidden;
+	display: block;
+	color: #48BF84;
+	height: 500px;
+}
+
+.header-text{
+	font-family: 'Lato';
+	font-size: 7.5vw;
+	font-weight: 700;
+}
+
+.header-text img {
+	margin-right: 0.1em;
+	float: left;
+	width: 9.8vw;
+	height: 9.8vw;
+}
+
+.subheader {
+	font-weight: 300;
+	margin-top: 0.25em;
+	font-size: 2vw;
+}
+
+.submission {
+	position: absolute;
+	margin-left: 4em;
+	top: 70%;
+	font-weight: 700;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	text-align: center;
+	background-color: transparent;
+	color: #48BF84;
+	border: 1px solid #48BF84;
+	width: 20vh;
+	height: 6.75vh;
+	border-radius: 20px;
+}
+
+.upload span {
+	line-height: 45px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.submission button:hover {
+	background-color: #48BF84;
+	color: white;
+	border: 1px solid  #48BF84;
+}
+
+.upload {
+	padding-top: 1.%;
+}
+
+.preview {
+	margin-top: 1.5em;
+	margin-left: 4.2em;
+	width: 20vw;
+	height: 20vw;
+}
+
+.metrics {
+	font-size: 1.5em;
+	color: #48BF84;
+	font-weight: 300;
+}
+
+#analysis-section p {
+	font-weight: 100;
+	margin-top: 0.25em;
+	margin-left: 1.5em;
+	font-size: 2.5vw;
+	margin-bottom: 2em;
+}
+
+.analyze {
+	left: 0.05%;
+	top: 70%;
+}
+
+#analysis-section {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#analysis-section h1 {
+	color: #48BF84;
+	font-weight: 700;
+	margin-left: 1.5em;
+}
+
+.credits {
+	left: 5%;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 90%;
+}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #48BF84;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+@media only screen and (max-width: 750px) {
+
+	.credits {
+	left: 5%;
+	font-size: 2vw;
+	position: absolute;
+	top: 90%;
+}
+
+  .side-image {
+  	display: none;
+  }
+
+  img[src="logo.png"] {
+	margin-right: 0;
+  	position: absolute;
+  	width: 13.5vw;
+  	height: 13.5vw;
+  	left: 10%;
+  }
+  .header-text {
+  	margin-left: 2em;
+  	text-align: center;
+  	font-size: 10vw;
+  }
+
+
+  .info {
+  	margin: 0;
+  	text-align: center;
+  }
+
+  .subheader {
+  	font-size: 2.7vw;
+  }
+
+
+#analysis-section h1 {
+	font-size: 3.5vw;
+	color: #48BF84;
+	font-weight: 700;
+	margin-left: 1.5em;
+}
+
+.preview {
+	margin-top: 1.5em;
+	margin-left: 5vw;
+	width: 32vw;
+	height: 32vw;
+}
+
+.submission {
+	text-align: center;
+	margin: 0;
+	left: 37%;
+}
+
+
+#analysis-section p {
+	font-size: 4vw;
+}
+
+.submission {
+	font-size: 3vw;
+}
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+	.credits {
+	left: 5%;
+	font-size: 2.7vw;
+	position: absolute;
+	top: 90%;
+}
+
+ img[src="logo.png"] {
+	margin-right: 0;
+  	position: absolute;
+  	width: 30vw;
+  	height: 30vw;
+  	left: 35%;
+  	top: 20%;
+  }
+
+
+.header-text {
+	margin-top: 0.1em;
+	margin-left: 0.1em;
+	font-size: 12vw;
+}
+
+.subheader {
+	display: none;
+}
+
+.info {
+	top: 65%;
+}
+
+
+.preview {
+	margin-top: 1.5em;
+	margin-left: 9vw;
+	width: 40vw;
+	height: 40vw;
+}
+
+
+.upload span {
+	line-height: 40px;
+}
+
+
+#analysis-section h1 {
+	font-size: 6vw;
+	color: #48BF84;
+	font-weight: 700;
+}
+
+.submission {
+	text-align: center;
+	margin: 0;
+	left: 40%;
+	font-size:3vw;
+}
+
+.upload {
+	left: 5%;
+	font-size:3vw;
+}
+
+
+#analysis-section p {
+	font-size: 5vw;
+}
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+.submission {
+	left: 32%;
+	font-size:3vw;
+}
+
+}
+
+
+
+
+
+
+
+
+

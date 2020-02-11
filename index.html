@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XSEGREGATE </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.1/dist/tf.min.js"></script>
+
+	<script type="text/javascript" src="script.js">
+</script>
+
+</head>
+<body>
+
+<div id="loader">
+</div>
+
+
+<div class="header info">
+<div class="header-text">
+ XSEGREGATE <!-- <img src="logo.png"/> -->
+</div>
+<div class="subheader">
+A Trash Classification Platform featuring a neural network 
+<br/> trained on the Google Colab and served with Tensorflow.js
+</div>
+
+<div class="side-image">
+<img src="green-team.png" width="500" height="500"/>
+</div>
+</div>
+
+
+<label class="custom-file-upload">
+   <div class="submission upload">
+    <span class="glyphicon glyphicon-open"> 
+	</span> UPLOAD </label>
+	</div>
+	<input name="img" type="file" accept="image/*" onclick="window.location.hash = '';window.location.hash = 'analysis-section'" onchange="previewFile()"/>
+</label>
+
+<div class="credits">
+built by the Green Team
+</div>
+
+
+<div id="analysis-section">
+<h1>Before uploading, patiently wait for a dialog box saying, "Model has loaded". <br/> Save the photo below or upload your own square image (JPEG or PNG)! Click analyze to see the prediction based on the uploaded photo!</h1> 
+<img src="food-wrapper.jpg" class="preview" id="preview" alt="Image preview"/>
+<br/> <br/> <br/> <br/><br/> <br/>
+
+<p id="prediction-text"></p>
+
+<button class="submission analyze" onclick="
+document.getElementById('prediction-text').innerHTML = ''; 
+document.getElementById('loader').style.display = 'inline'; 
+analyze()"> <span class="glyphicon glyphicon glyphicon-stats"> 
+	</span>&nbsp; ANALYZE </label>
+</button>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
