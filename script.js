@@ -70,9 +70,6 @@ async function runModel(file) {
      }
 
 
-     document.getElementById("prediction-text").innerHTML = largest_class;
-
-
     // if (percent > 50) {
     //     if (predictions < 0.5) {
     //         document.getElementById("prediction-text").innerHTML = "File name: " + fileName + "<br/>This tissue is normal!";
