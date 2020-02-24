@@ -70,15 +70,6 @@ async function runModel(file) {
      }
 
 
-    // if (percent > 50) {
-    //     if (predictions < 0.5) {
-    //         document.getElementById("prediction-text").innerHTML = "File name: " + fileName + "<br/>This tissue is normal!";
-    //     } else {
-    //         document.getElementById("prediction-text").innerHTML = "File name: " + fileName + "<br/>This tissue contains tumours!";
-    //     }
-    // } else {
-    //     document.getElementById("prediction-text").innerHTML = "The model is uncertain. Please try a different image.";
-    // }
 
 
 }

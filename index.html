@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XSEGREGATE </title>
+	<title>XSegregate </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <link rel='icon' type='image/x-icon' href='web-favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='web-favicon.ico' />
+
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="style.css" type="text/css" rel="stylesheet"/>
@@ -22,7 +24,7 @@
 
 <div class="header info">
 <div class="header-text">
- XSEGREGATE <!-- <img src="logo.png"/> -->
+ XSEGREGATE
 </div>
 <div class="subheader">
 A Trash Classification Platform featuring a neural network 
@@ -30,7 +32,7 @@ A Trash Classification Platform featuring a neural network
 </div>
 
 <div class="side-image">
-<img src="green-team.png" width="500" height="500"/>
+<img src="logo.png"/>
 </div>
 </div>
 
@@ -44,14 +46,13 @@ A Trash Classification Platform featuring a neural network
 </label>
 
 <div class="credits">
-built by the Green Team Innovation Subcommittee
+built by the Green Team Innovation Subcommittee with XS Next Lab
 </div>
 
 
 <div id="analysis-section">
-<h1>Before uploading, patiently wait for a dialog box saying, "Model has loaded". <br/> Save the photo below or upload your own image (JPEG or PNG)! Click analyze to see the prediction based on the uploaded photo!</h1> 
+<h1>Before uploading, patiently wait for a dialog box saying, "Model has loaded". <br/> Save the photo below or upload your own square image (JPEG or PNG)! Click analyze to see the prediction based on the uploaded photo!</h1> 
 <img src="food-wrapper.jpg" class="preview" id="preview" alt="Image preview"/>
-<br/> <br/> <br/> <br/><br/> <br/> <br/>
 
 <p id="prediction-text"></p>
 
@@ -59,7 +60,7 @@ built by the Green Team Innovation Subcommittee
 document.getElementById('prediction-text').innerHTML = ''; 
 document.getElementById('loader').style.display = 'inline'; 
 analyze()"> <span class="glyphicon glyphicon glyphicon-stats"> 
-	</span>&nbsp; ANALYZE </label>
+	</span> ANALYZE </label>
 </button>
 
 

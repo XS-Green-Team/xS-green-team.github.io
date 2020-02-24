@@ -1,4 +1,5 @@
-# XSEGREGATE
-A trash classifier featuring a neural network trained on Google Colab and served through Tensorflow.js
-<br/>
-Created by the <i>Green Team Innovation Subcommittee</i>
+# Cloudiopsy
+
+A colorectal tissue classifier neural network trained on Google Cloud Platform and served through Tensorflow.js
+---
+Created by Adrian Serapio
