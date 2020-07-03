@@ -1,5 +1,5 @@
-# Cloudiopsy
+# Green Team Trash Segregation
 
-A colorectal tissue classifier neural network trained on Google Cloud Platform and served through Tensorflow.js
+A Trash Segregation App
 ---
-Created by Adrian Serapio
+Created by XS Green Team
